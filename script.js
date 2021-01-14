@@ -25,7 +25,7 @@ document.getElementById('startButton').addEventListener('click', () => {
     // get a quote
     const quoteIndex = Math.floor(Math.random() * quotes.length);
     const quote = quotes[quoteIndex];
-    words = quote.split();
+    words = quote.split(' ');
     wordIndex = 0;
 
     // UI updates 
