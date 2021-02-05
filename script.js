@@ -79,7 +79,7 @@ typeValueElement.addEventListener('input', () => {
             wordElement.className = '';
         }
         // Highlight the new word
-        quoteElement.childNodes[wordIndex].className = 'highlight';
+        quoteElement.childNodes[wordIndex * 2].className = 'highlight';
     } else if (currentWord.startsWith(typedValue)) {
         // Currently correct, highlight the next word
         typeValueElement.className = '';
